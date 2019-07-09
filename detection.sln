@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "detection", "detection\detection.csproj", "{4C736F07-FB70-453A-9D8E-ACB036B4038D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Debug|x64.ActiveCfg = Debug|x64
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Debug|x64.Build.0 = Debug|x64
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Release|x64.ActiveCfg = Release|x64
+		{4C736F07-FB70-453A-9D8E-ACB036B4038D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC09AE34-7D3D-4094-B817-907249FF8A31}
+	EndGlobalSection
+EndGlobal
