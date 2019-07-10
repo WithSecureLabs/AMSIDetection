@@ -5,6 +5,6 @@ Company: Countercept (@countercept)
 Website: https://countercept.com
 
 
-How to run
+How to Compile/execute
 
-Program must be compiled in x64 and must execute with adminstrative privliges
+Program must be compiled in x64 and run with adminstrative privliges.  
