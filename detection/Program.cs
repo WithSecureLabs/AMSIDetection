@@ -194,9 +194,9 @@ namespace detection
                     if (moduleName.ToString().Contains("amsi.dll"))
                     {
                         Boolean amsiIntegrityCheck = AmsiIntegrityCheck(processHandle, listOfModules[count], onDiskAmsiCodehash);
-                        Boolean bypassFound = checkAmsiScanBufferBypass(processHandle, listOfModules[count]);
+                        //Boolean bypassFound = checkAmsiScanBufferBypass(processHandle, listOfModules[count]);
                         gch.Free();
-                        return bypassFound;
+                        return amsiIntegrityCheck;
                     }
                 }
             }
@@ -218,10 +218,15 @@ namespace detection
             String inMemoryAmsiCodehash = getSectionHeaderofAmsi(amsiReader, true, inMemoryAmsiDLL);
 
             if (inMemoryAmsiCodehash.Equals(onDiskAmsiCodehash))
+            {
                 Console.WriteLine("hash matches");
+                return false;
+            }
             else
-                Console.WriteLine("Hash does not match");            
-            return false;          
+            {
+                Console.WriteLine("Hash does not match");
+                return true;
+            }
         }
 
         // this method check if the AmsiScanBuffer is tampered with 
